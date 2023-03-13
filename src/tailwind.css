@@ -6,3 +6,19 @@
 :root {
     --primary-color: #f53838;
 }
+
+@layer components {
+    .nav {
+        @apply px-5 py-3 font-normal text-base leading-5 hover:text-[var(--primary-color)];
+    }
+
+    .btn-nav {
+        @apply ml-[30px] min-w-[150px] border border-solid border-[var(--primary-color)] rounded-[50px] px-6 py-[9.84px] text-[var(--primary-color)] text-base leading-5 font-medium hover:text-white hover:bg-[var(--primary-color)];
+    }
+
+    .btn-hero {
+        @apply inline-block min-w-[250px] px-12 py-[18px] rounded-[10px] bg-[var(--primary-color)] text-white font-bold text-base mt-[50px] text-center;
+        /* after:content-none after:absolute after:w-[
+        211.83px] after:inline-block after:h-[25.2px] after:top-6 after:bg-orange-500 */
+    }
+}
