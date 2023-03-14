@@ -8,6 +8,16 @@
     --bg-pseudo: rgba(245, 56, 56, 0.35);
 }
 
+@layer base {
+    .heading {
+        @apply font-medium text-[#0B132A] text-4xl leading-[1.43];
+    }
+
+    .desc {
+        @apply font-normal text-base leading-[1.88] text-[#4F5665] mt-5;
+    }
+}
+
 @layer components {
     .nav {
         @apply px-5 py-3 font-normal text-base leading-5 hover:text-[var(--primary-color)];
