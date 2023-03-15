@@ -8,6 +8,13 @@
     --bg-pseudo: rgba(245, 56, 56, 0.35);
 }
 
+.cliptext {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 4);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 @layer base {
     .heading {
         @apply font-medium text-[#0B132A] text-4xl leading-[1.43];
